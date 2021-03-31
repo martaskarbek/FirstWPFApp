@@ -1,0 +1,13 @@
+﻿<Window x:Class="FirstWPFApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FirstWPFApp"
+        mc:Ignorable="d"
+        Title="MyFirstWPFApp" Height="450" Width="800">
+    <Grid>
+        <Button Name="first" Width="70" Height="30" Margin="557,332,166.6,58" Click="first_Click" >ClickMe</Button>
+        <Label Name="onEvent" Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="256,177,0,0"/>
+    </Grid>
+</Window>
