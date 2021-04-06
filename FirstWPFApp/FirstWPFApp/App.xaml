@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:FirstWPFApp"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <local:InkEditingModes x:Key="editingModes" EditingMode="EraseByPoint" />
     </Application.Resources>
 </Application>
