@@ -1,0 +1,149 @@
+﻿<Window x:Class="FirstWPFApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FirstWPFApp"
+        mc:Ignorable="d"
+        Title="MyFirstWPFApp" Height="450" Width="800">
+    <!--<Grid x:Name="grid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" MinHeight="300"/>
+            <RowDefinition Height="3*" MinHeight="300"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" MinWidth="300"/>
+            <ColumnDefinition Width="3*" MinWidth="300"/>
+        </Grid.ColumnDefinitions>
+        <Rectangle Grid.Row="1" Grid.Column="0" Fill="Beige"/>
+        <Button Grid.Row="1" Grid.Column="0" x:Name="first" Width="70" Height="30" Click="first_Click" Background="#FFEBA3A3" >ClickMe
+            <Button.Triggers>
+                <EventTrigger RoutedEvent="Mouse.MouseEnter">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)" To="CadetBlue"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Button.Triggers>
+        </Button>
+        <Label Name="onEvent" Content="Label" Background="#FFBB93E0" Grid.Column="0" Grid.ColumnSpan="2"/>
+        <Grid Grid.Row="1" Grid.Column="1" >
+            <Button x:Name="secondary" VerticalAlignment="Center" HorizontalAlignment="Center" Padding="10 0" Click="Button_Click" >new</Button>
+        </Grid>
+        <GridSplitter Width="1" Grid.RowSpan="2" Background="red"/>
+        <GridSplitter HorizontalAlignment="Stretch" Grid.ColumnSpan="2" Background="red" Height="2" VerticalAlignment="Bottom"/>
+    </Grid>--> 
+    <!--//Columns ="2" means he will try to set everything in exaxct 2 columns-->
+    <!--if i will set width on uniform griddnot on a button, then it will make all elements with this width
+it is good eg for data from data base-->
+    <!--<UniformGrid Columns="2">
+        <Button Width="80" HorizontalAlignment="Center" VerticalAlignment="Center">1</Button>
+        <Button>2</Button>
+        <Button>3</Button>
+        <Button>4</Button>
+    </UniformGrid>-->
+    <!-- orientation - It makes every elemnt is puted from up to KeyDown, under this before-->
+    <!--If we mess up, then what is overflow will dissappear, will fix that wrap panel-->
+    <!--<StackPanel Orientation="Horizontal" Background="Fuchsia">
+        <Button VerticalAlignment="Top">2</Button>
+        <Button>2</Button>
+        <Button>2</Button>
+        <Button>2</Button>
+        <Button VerticalAlignment="Center">2</Button>
+    </StackPanel>-->
+    <!--<WrapPanel Orientation="Horizontal" Background="Fuchsia">
+        <Button VerticalAlignment="Top">top</Button>
+        <Button>2</Button>
+        <Button VerticalAlignment="Bottom">bottom</Button>
+        <Button>2</Button>
+        <Button VerticalAlignment="Center">center</Button>
+    </WrapPanel>-->
+    <!--<DockPanel LastChildFill="False">
+        <Button DockPanel.Dock="Left">Left</Button>
+        <Button DockPanel.Dock="Top">Top</Button>
+        
+        <Button DockPanel.Dock="Right">Right</Button>
+        <Button DockPanel.Dock="Bottom">Bottom</Button>
+        <Button>Center</Button>
+    </DockPanel>-->
+    <!--Canvas is using for not standard things. Do not use if u can use something else relativ to something what is higher, here window-->
+    <!--<Canvas>
+        <Button Content="Button" Canvas.Left="20" Canvas.Top="20"></Button>
+        <Button Content="Button" Canvas.Left="20" Canvas.Top="40"></Button>
+    </Canvas>-->
+    <!--<Grid>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+            <TextBlock TextWrapping="Wrap">
+                ~1~<TextBlock TextWrapping="Wrap">@1@
+                mshnegrbv4gt nmshgb uiyrgcrj jeyrtc  uetutnc  jgrc er jygcuer jxgurg h usrygubrcgr
+                mshnegrbv4gt nmshgb uiyrgcrj jeyrtc  uetutnc  jgrc er jygcuer jxgurg h usrygubrcgr
+                mshnegrbv4gt nmshgb uiyrgcrj jeyrtc  uetutnc  jgrc er jygcuer jxgurg h usrygubrcgr
+                mshnegrbv4gt nmshgb uiyrgcrj jeyrtc  uetutnc  jgrc er jygcuer jxgurg h usrygubrcgr
+                mshnegrbv4gt nmshgb uiyrgcrj jeyrtc  uetutnc  jgrc er jygcuer jxgurg h usrygubrcgr
+                mshnegrbv4gt nmshgb uiyrgcrj jeyrtc  uetutnc  jgrc er jygcuer jxgurg h usrygubrcgr
+            </TextBlock>
+        </ScrollViewer>
+    </Grid>-->
+    <!--<Grid>
+       <Expander Header="How to contact with you?" Margin="5" IsExpanded="True">
+           ~1~in expander same as in button can not have more then one child, so we can do grid and in that make more or stack panel@1@
+           <StackPanel>
+               <TextBlock>To contact with us call 333 333 333</TextBlock>
+               <TextBlock>To contact with us call 555 555 555</TextBlock>
+           </StackPanel>
+       </Expander> 
+    </Grid>-->
+    <!--<StackPanel>-->
+        <!--<Label FontWeight="Bold">How much do You play on computer</Label>
+        <RadioButton GroupName="play">none</RadioButton>
+        <RadioButton GroupName="play">1-3h</RadioButton>
+        <RadioButton GroupName="play">3-6h</RadioButton>
+        <RadioButton GroupName="play">24h/7</RadioButton>
+        <Label FontWeight="Bold">How much do You sleep</Label>
+        <RadioButton GroupName="sleep">none</RadioButton>
+        <RadioButton GroupName="sleep">1-3h</RadioButton>
+        <RadioButton GroupName="sleep">3-6h</RadioButton>
+        <RadioButton GroupName="sleep">24h/7</RadioButton>-->
+        <!--if we do not want to give group name property:-->
+        <!--<GroupBox Margin="10">
+          <GroupBox.Header>
+              <Bold>
+                  How much do You play on computer
+              </Bold>
+          </GroupBox.Header>
+            <StackPanel Margin="10">
+                <RadioButton>none</RadioButton>
+                <RadioButton>1-3h</RadioButton>
+                <RadioButton>3-6h</RadioButton>
+                <RadioButton>24h/7</RadioButton>
+            </StackPanel>
+        </GroupBox>
+        <Label FontWeight="Bold">How much do You sleep</Label>
+        <StackPanel>
+            <RadioButton>none</RadioButton>
+            <RadioButton>1-3h</RadioButton>
+            <RadioButton>3-6h</RadioButton>
+            <RadioButton>24h/7</RadioButton>
+        </StackPanel>
+    </StackPanel>-->
+        <!--<StackPanel>
+            <TextBox x:Name="TextToCopy" Text="Test"></TextBox>
+            ~1~<TextBlock Text="{Binding ElementName=TextToCopy, Path=Text}">@1@
+            ~1~It upper is same result what below@1@
+            <TextBlock x:Name="text_block" Text="{Binding Text, ElementName=TextToCopy, Mode=OneTime}">
+            </TextBlock>
+            <Button Click="Change_Click">Click To Change</Button>
+            ~1~Slider defolut has values 0-10, we can change it@1@
+            <Slider Value="{Binding ElementName=SliderValue, Path=Text}" Maximum="30" Minimum="0" IsSnapToTickEnabled="True" TickFrequency="5"></Slider>
+            <TextBox x:Name="SliderValue"></TextBox>
+        </StackPanel>-->
+ 
+    <DockPanel x:Name="dockerPanelTest">
+        <StackPanel Width="80">
+            <Button x:Name="Selection" Click="Selection_Click">Select</Button>
+            <Button x:Name="Drawing" Content="Draw" Click="Drawing_Click" />
+        </StackPanel>
+        <InkCanvas x:Name="inkCanvas" EditingMode="{Binding Path=EditingMode, Source={StaticResource editingModes}}"></InkCanvas>
+    </DockPanel>
+</Window>
